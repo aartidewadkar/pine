@@ -1,118 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>32 Pinewood Drive</title>
 	<meta charset="UTF-8">
 	<meta name="description" content="32 Pinewood Drive">
 	<meta name="keywords" content="PINEWOOD, unica, creative, html">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	
+
 	<!-- Google Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet"
+		href="https://unpkg.com/bootstrap-material-design@4.1.1/dist/css/bootstrap-material-design.min.css"
+		integrity="sha384-wXznGJNEXNG1NFsbm0ugrLFMQPWswR3lds2VeinahP8N0zJw9VWSopbjv2x7WCvX" crossorigin="anonymous">
 
- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
- <link rel="stylesheet" type="text/css" href="../public/css/style.css">
- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
-	
+	<link rel="stylesheet" type="text/css" href="../public/css/pine.css">
 </head>
+
 <body>
 	<div class="header-section">
-			<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<div class="site-navbar">
-								<a href="#" class="site-logo"><img src="../public/images/logo.png" style="width: 100px" alt=""></a>
-								<div class="nav-switch">
-									<i class="fa fa-bars"></i>
-								</div>
-								<ul class="main-menu">
-									<li><a href="index.html">Home</a></li>
-									<li><a href="about.html">ABOUT US</a></li>
-									<li><a href="blog.html">BLOG</a></li>
-									<li><a href="amenities.html">AMENITIES</a></li>
-									<li><a href="contact.html">CONTACT</a></li>
-								</ul>
+		<!--Carousel Wrapper-->
+		<section id="carousel-example-2" class="carousel slide carousel-fade" data-ride="carousel">
+			<!--Indicators-->
+			<ol class="carousel-indicators">
+				<li data-target="#carousel-example-2" data-slide-to="0" class="active"></li>
+				<li data-target="#carousel-example-2" data-slide-to="1"></li>
+				<li data-target="#carousel-example-2" data-slide-to="2"></li>
+			</ol>
+			<!--/.Indicators-->
+			<!--Slides-->
+			<div class="carousel-inner" role="listbox">
+				<div class="carousel-item active">
+					<div class="view">
+						<img class="d-block w-100" src="../public/images/1.jpg" alt="First slide">
+						<div class="mask rgba-black-light"></div>
+					</div>
+					<div class="carousel-caption">
+						<h3 class="h3-responsive">Light mask</h3>
+						<p>First text</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<!--Mask color-->
+					<div class="view">
+						<img class="d-block w-100" src="../public/images/2.jpg" alt="Second slide">
+						<div class="mask rgba-black-strong"></div>
+					</div>
+					<div class="carousel-caption">
+						<h3 class="h3-responsive">Strong mask</h3>
+						<p>Secondary text</p>
+					</div>
+				</div>
+				<div class="carousel-item">
+					<!--Mask color-->
+					<div class="view">
+						<img class="d-block w-100" src="../public/images/3.jpg" alt="Third slide">
+						<div class="mask rgba-black-slight"></div>
+					</div>
+					<div class="carousel-caption">
+						<h3 class="h3-responsive">Slight mask</h3>
+						<h3 class="h3-responsive">Slight mask</h3>
+						<h3 class="h3-responsive">Slight mask</h3>
+
+						<p>Third text</p>
+					</div>
+				</div>
+			</div>
+			<!--/.Slides-->
+			<!--Controls-->
+			<a class="carousel-control-prev" href="#carousel-example-2" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="carousel-control-next" href="#carousel-example-2" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			</a>
+			<!--/.Controls-->
+		</section>
+		<!--/.Carousel Wrapper-->
+		<div class="container ">
+			<!-- <div class="row">
+				<div class="col-md-12"> -->
+			<nav id="hamburger" class="navbar navbar-expand-lg navbar-light fixed-top">
+				<div class=" container">
+					<a href="#" class="navbar-brand">
+						<img src="../public/images/logo.png" height="78" alt="CoolBrand">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse"
+						data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+						aria-label="Toggle navigation">
+						<span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+						<div class="navbar-nav flex-fill">
+							<div><a class="nav-item nav-link" href="#">
+									HOME </a>
 							</div>
+							<div><a class="nav-item nav-link" href="#">ABOUT US</a></div>
+							<div><a class="nav-item nav-link" href="#">BLOG</a></div>
+							<div><a class="nav-item nav-link" href="#">AMENITIES</a></div>
+							<div><a class="nav-item nav-link" href="#">CONTACT</a></div>
 						</div>
 					</div>
-					<!-- modal start -->
-					
 					<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
-							Launch demo modal
-						  </button>
-						  
-						  <!-- Modal -->
-						  <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							<div class="modal-dialog" role="document">
-							  <div class="modal-content">
-								<div class="modal-header">
-								  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-								  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-									<span aria-hidden="true">&times;</span>
-								  </button>
-								</div>
-								<div class="modal-body">
-								  ...
-								</div>
-								<div class="modal-footer">
-								  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-								  <button type="button" class="btn btn-primary">Save changes</button>
-								</div>
-							  </div>
-							</div>
-						  </div>
-				
-			</header>
-			<!-- Header section end -->
-		
-		
-			<!-- Hero section -->
-			<section class="hero-area">
-					<div class="hero-slides owl-carousel">
-						<!-- Single Hero Slide -->
-						<div class="single-hero-slide bg-img" style="background-image: url(../public/images/1.jpg);">
-							<div class="container h-100">
-								<div class="row h-100 align-items-center">
-									<div class="col-12">
-										<div class="hero-slides-content">
-											<h2 data-animation="fadeInUp" data-delay="100ms">Find your home</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Single Hero Slide -->
-						<div class="single-hero-slide bg-img" style="background-image: url(../public/images/2.jpg);">
-							<div class="container h-100">
-								<div class="row h-100 align-items-center">
-									<div class="col-12">
-										<div class="hero-slides-content">
-											<h2 data-animation="fadeInUp" data-delay="100ms">Find your dream house</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- Single Hero Slide -->
-						<div class="single-hero-slide bg-img" style="background-image: url(../public/images/3.jpg);">
-							<div class="container h-100">
-								<div class="row h-100 align-items-center">
-									<div class="col-12">
-										<div class="hero-slides-content">
-											<h2 data-animation="fadeInUp" data-delay="100ms">Find your perfect house</h2>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
+						Enquiry Now
+					</button>
+				</div>
+			</nav>
+			<!-- </div>
+			</div> -->
+		</div>
+
+
+		<!-- Enquiry Modal start -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+			aria-hidden="true">
+			<div class="modal-dialog" role="document">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 					</div>
-				</section>
-				<!-- ##### Hero Area End ##### -->
-			<!-- Hero section end -->
-		
+					<div class="modal-body">
+						<!-- <form>
+						<div class="form-group">
+							<label for="exampleInputName">Name</label>
+							<input type="text" class="form-control-md" id="exampleInputPassword1"
+								placeholder="Ravi Kumar">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputEmail">Email</label>
+							<input type="email" class="form-control-md" id="exampleInputPassword1"
+								placeholder="abc@abc.com">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputMobileNumber">Mobile Number</label>
+							<input type="tel" class="form-control-md" id="exampleInputMobileNumber"
+								placeholder="+91-9XXXXXXXXX">
+						</div>
+						<div class="form-group">
+							<label for="exampleInputComment">Note</label>
+							<textarea type="text" class="form-control-md" id="exampleInputComment"
+								placeholder="Your comment, questions, note etc."></textarea>
+						</div>
+					</form> -->
+						<form>
+							<div class="form-group">
+								<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+								<label for="formGroupExampleInput" class="bmd-label-floating">Example label</label>
+								<input type="text" class="form-control" id="formGroupExampleInput">
+							</div>
+							<div class="form-group bmd-form-group">
+								<!-- manually specified -->
+								<label for="formGroupExampleInput2" class="bmd-label-floating">Another label</label>
+								<input type="text" class="form-control" id="formGroupExampleInput2">
+							</div>
+						</form>
+					</div>
+					<div class="modal-footer">
+
+						<button type="button" class="btn btn-primary">Submit</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--Enquiry Model ends here-->
+	</div>
+
+	<!-- </div> -->
+	<!-- </header> -->
+	<!-- Header section end -->
+
+	<div class="header-container">
+
+
 	</div>
 </body>
