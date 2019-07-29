@@ -5,36 +5,119 @@
 }
 
 .navbar {
-    position: absolute;
+    /* position: fixed;
+    width: 101%; */
+    background-color: rgb(0, 0, 0, 0.4);
+    /* margin-left: -1%; */
+
+}
+
+/* nav.navbar1 {
+    position: relative;
     width: 101%;
-    background-color: rgb(0, 0, 0, 0.0);
+    height: 100px;
+    background-color: rgb(0, 0, 0, 0.4);
     margin-left: -1%;
 
-}
+} */
 
 .navbar-light .navbar-nav .nav-link {
-    color: floralwhite;
+    color: ivory;
+    padding-left: 2.5rem
 }
 
-.carousel {
+.nav-link:hover {
+    border-bottom: 4px solid #d36262;
+    padding: 6px 0;
+    background-color: #a9b357;
+    color: rgb(141, 116, 66);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.mrtop p {
+    display: block;
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: Roboto;
+    color: #fff;
+}
+
+h5 {
+    letter-spacing: 2.5px;
+    font-weight: 400;
+    text-transform: uppercase;
+    margin: 0;
+    line-height: 1em;
+}
+
+.subtitle-margin {
+    margin-bottom: 8px;
+    margin-top: -2px;
+}
+
+.special-color {
+    color: #fff !important;
+}
+
+/* .carousel {
     position: absolute;
-    opacity: 0.7;
-
-
+ opacity: 0.7; 
+ width: 100%;
+    height: 70%; 
 }
 
-.carousel-inner>.item>img {
-    /* min-width: 100%; */
+*/
+/* .carousel-inner>.item>img {
     width: 100%;
     height: 80%;
-}
+} */
 
-.navbar-collapse {
+/* .navbar-collapse {
     margin-left: 13%;
+} */
+
+/* .nav-pad {
+    margin-left: 12px;
+} */
+
+
+.modal-lg {
+    max-width: 80%;
 }
 
-.btn-primary {
-    color: #fff;
-    background-color: #a9b357;
-    border-color: #a9b357;
+.modal-dialog {
+    position: fixed;
+    width: 22%;
+    top: 11%;
+    right: 1.5%;
+    /* margin: 0.3rem; */
+}
+
+.modal-content {
+    background-color: #92d8a1;
+    color: white;
+}
+
+
+/* gallery section start */
+img {
+    vertical-align: middle;
+}
+
+.neighbourhood-container {
+    margin: 45px auto auto;
+    width: 90%;
+}
+
+section.neighbourhood {
+    background-size: cover;
+    background: url(../../public/images/neighbourhood-bg.jpg) 50% 0 no-repeat fixed #313a61;
+}
+
+.mrtop {
+    cursor: pointer;
+    position: relative;
 }
