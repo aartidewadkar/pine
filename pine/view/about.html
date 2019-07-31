@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>32 Pinewood Drive</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="32 Pinewood Drive">
+    <meta name="keywords" content="PINEWOOD, unica, creative, html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+
+    <link rel="stylesheet" type="text/css" href="../public/css/about.css">
+    <link rel="stylesheet" type="text/css" href="../public/css/pine.css">
+</head>
+
+<body>
+
+    <div class="container ">
+        <!-- <div class="row">
+                    <div class="col-md-12"> -->
+        <nav id="hamburger" class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class=" container">
+                <a href="#" class="navbar-brand">
+                    <img src="../public/images/logo.png" height="88" alt="CoolBrand">
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+
+                    <div class="navbar-nav flex-fill">
+                        <div><a class="nav-item nav-link nav-pad" href="../view/pinewood.html">
+                                HOME </a>
+                        </div>
+                        <div><a class="nav-item nav-link" href="../view/about.html">ABOUT US</a></div>
+                        <div><a class="nav-item nav-link" href="#">BLOG</a></div>
+                        <div><a class="nav-item nav-link" href="#">AMENITIES</a></div>
+                        <div><a class="nav-item nav-link" href="#">SITE UPDATES</a></div>
+                        <div><a class="nav-item nav-link" href="../view/Contact.html">CONTACT</a> </div>
+                    </div>
+                </div>
+                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+                    Enquiry Now
+                </button>
+            </div>
+        </nav>
+    </div>
+
+    <!-- Enquiry Modal start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <label for="formGroupExampleInput" class="bmd-label-floating">Please Let us know you
+                        requirement!
+                    </label>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9">Name :
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <input type="text" placeholder="ex. Shreya Agarwal" required
+                                    class="form-control col-md-9" id="formGroupExampleInput">
+                            </div>
+
+                        </div>
+                        <div class="form-group bmd-form-group">
+                            <!-- manually specified -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <label for="formGroupExampleInput2" class="bmd-label-floating col-md-9">Email :
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <input type="email" placeholder="ex. abc@gmail.com" required
+                                    class="form-control col-md-9" id="formGroupExampleInput2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9">Phone :
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <input type="phone" placeholder="ex. +91 9867543267" required
+                                    class="form-control col-md-9" id="formGroupExampleInput">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <label for="formGroupExampleInput"
+                                    class="bmd-label-floating col-md-9 label_center">Comment :
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required
+                                    class="form-control col-md-9" id="formGroupExampleInput"></textarea>
+                            </div>
+
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+
+                    <button type="button" class="btn btn-primary">Submit</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Enquiry Model ends here-->
+
+
+    <section class="about-image no-padding about"
+        style="background: #152560 url('https://www.namratagroup.com/img/about-image.jpg') no-repeat center;">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 short-image-title margin-top-200">
+                    <h1 class="second-color wow fadeInDown">About Us</h1>
+                    <div class="short-title-separator"></div>
+                    <div class="col-lg-8 about-desc col-lg-offset-2">
+                        <p class="wow fadeInLeft">Namrata Group has been into the real estate business since the
+                            past 30 years and created a niche for itself in Talegaon, Kamshet and Pune.
+                            &nbsp;Namrata Group caters to every segment of the society and makes the dream of every
+                            home buyer their very &nbsp;own and work in the same direction.
+                            &nbsp; Their focus has been into developing premium residential townships, commercial
+                            complexes, lifestyle gated communities and affordable abodes. It firmly believes in the
+                            philosophy of ‘Think. Feel. Do’ for its customers, employees and its stakeholders.
+                            The brand today has risen to become a brand known for innovation in design, assured
+                            quality and cutting-edge engineering. Add to that a committed powerhouse of human
+                            resource that's always eager to rise to the next level.
+                            &nbsp;</p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+    <section id="uspro" class="section-light section-both-shadow black-nav" align="center">
+        <nav id='nav_bar'>
+            <ul class='nav_links'>
+                <li><a href="#vision" class="scroll">Vision</a></li>
+                <li><a href="#mission" class="scroll">Mission</a></li>
+                <li><a href="#values" class="scroll">Values</a></li>
+            </ul>
+        </nav>
+    </section>
+    <!-- vision section start -->
+    <section class="section-light top-padding-45 section-both-shadow bottom-padding-45"
+        style="z-index:90; background-color:#fff;">
+
+        <div class="container vision wow fadeInRight" style="margin-top:50px;">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 text-center margin-top-45">
+                    <h5 class="subtitle-margin">&nbsp;</h5>
+                    <h1 class="">Vision<span class="special-color">.</span></h1>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-offset-4 col-sm-4">
+                    <div class="title-separator-primary2">
+                        
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="col-lg-8 visionx margin-top-30 col-lg-offset-2 bottom-padding-45">
+                <p>With our innovative designs and use of modern engineering, we aim to be India's most preferred real
+                    estate firm that adds meaningful value to our clients dream home. Our team of expert professionals
+                    are constantly determined to give remarkable results. We aim to achieve customer satisfaction by
+                    providing well-occupied homes along with top-line designs and modern amenities, within the given
+                    time frame.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- mission section start -->
+    <section class="section-light top-padding-45 section-both-shadow bottom-padding-45"
+        style="z-index:90; background-color:#fff;">
+        <div class="container vision wow fadeInRight" style="margin-top:50px;">
+            <div class="row">
+                <div class="col-xs-12 col-lg-12 text-center margin-top-45">
+                    <h5 class="subtitle-margin">&nbsp;</h5>
+                    <h1 class="">Mission<span class="special-color">.</span></h1>
+                </div>
+                <div class="col-xs-8 col-xs-offset-2 col-sm-offset-4 col-sm-4">
+                    <div class="title-separator-primary2"></div>
+                </div>
+            </div>
+            <div class="col-lg-8 visionx margin-top-30 col-lg-offset-2 bottom-padding-45">
+                <p>Our mission is to provide our clients with the highest standard of customer service, by adding a team
+                    of qualified real estate professional to maintaining complete transparency and accuracy at work.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+    <!-- value section start -->
+    <a id="values"></a>
+    <section class="section-light top-padding-45 section-both-shadow bottom-padding-45" style="z-index:90; background-color:#fff;">
+
+            <div class="container vision wow fadeInRight" style="margin-top:50px;">
+    
+                <div class="row">
+    
+                    <div class="col-xs-12 col-lg-12 text-center margin-top-45">
+    
+                        <h5 class="subtitle-margin">&nbsp;</h5>
+    
+                        <h1 class="">Values<span class="special-color">.</span></h1>
+    
+                    </div>
+    
+                    <div class="col-xs-8 col-xs-offset-2 col-sm-offset-4 col-sm-4">
+    
+                        <div class="title-separator-primary2"></div>
+    
+                    </div>
+    
+                </div>
+    
+                <div class="col-lg-8 visionx margin-top-30 col-lg-offset-2 bottom-padding-45">
+    
+                    <p>We believe our unaltered commitment to our values of quality, innovations, customer satisfaction and transparency has made us what we are. Commitment to excellent, ethical dealing and transparency at work are the values that are enshrined in our work culture. We believe our customers are our best endorsers. We endeavor to exceed our customer's expectations by helping them live their dream.
+    </p>
+    
+                </div>
+    
+            </div>
+    
+        </section>
+<!-- footer section start -->
+
+<div class="content">
+    </div>
+        <footer id="myFooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-3">
+                        <img src="../public/images/logo.png" class="logo">
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Get started</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="#">Sign up</a></li>
+                            <li><a href="#">Downloads</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="#">Company Information</a></li>
+                            <li><a href="#">Contact us</a></li>
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-2">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Help desk</a></li>
+                            <li><a href="#">Forums</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="social-networks">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                        <button type="button" class="btn btn-default">Contact us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2019 32 PinewoodDrive </p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
