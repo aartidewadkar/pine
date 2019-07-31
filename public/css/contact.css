@@ -1,10 +1,15 @@
-.bg-image{
-    background-image: url(../images/1.jpg);
-    opacity: 0.5;
+.bg-image {
+    /* background-image: url(../images/1.jpg); */
+    /* background: url(../images/1.jpg) 50% 0 no-repeat fixed #313a61; */
+    background: linear-gradient(rgba(189, 73, 73, 0.5), rgba(206, 79, 79, 0.5)), url('../images/1.jpg');
+    /* opacity: 0.5; */
     height: 500px;
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
 }
+
+
+
 
 .hs-page-width-normal {
     max-width: 1080px;
@@ -12,53 +17,64 @@
     padding: 0 2rem;
     box-sizing: content-box;
 }
+
 .contact-box-wrapper {
     top: -60px;
     position: relative;
     display: flex;
     flex-direction: row;
 }
+
 .contact-box {
     width: 50%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    /* text-align: center; */
     padding: 32px 40px;
     background-color: #fff;
     border: 1px solid #eaf0f6;
 }
-h3{
+
+h3 {
     text-transform: uppercase;
     font-weight: bold;
 }
+
 .margin-top-45 {
     margin-top: 20px !important;
 }
+
 .address {
     /* margin-bottom: 20px; */
     font-style: normal;
-    line-height:1.42857143;
+    line-height: 1.42857143;
     font-size: 13px;
+    justify-content: left;
 }
+
 address.contact-info {
     margin: -3px 0 0 30px;
     display: block;
     padding-top: 45px;
 }
+
 address.contact-info span {
-    
+
     margin-bottom: 15px;
 }
- address.contact-info i.fa {
+
+address.contact-info i.fa {
     margin-right: 20px;
     width: 8px;
     color: darkcyan
-} 
+}
+
 .agent-social-bar {
     border-width: 1px 0 1px 0;
     border: 1px solid #ebebeb;
 }
+
 .agent-social-bar {
     min-height: 40px;
     padding-bottom: 10px;
@@ -66,23 +82,27 @@ address.contact-info span {
     font-weight: bold;
     margin-bottom: 15px;
 }
+
 .contact-social i.fa.fa-youtube-square {
     color: #cd201f;
-    
+
     height: 50px;
 }
-.second-header{
+
+.second-header {
     text-align: center;
     max-width: 712px;
     margin: 0px auto;
-   
+
 }
-h1{
-    color:black;
+
+h1 {
+    color: black;
     font-size: 3.77em;
     font-weight: 700;
     padding-top: 25%;
 }
-p{
+
+p {
     color: white;
 }
