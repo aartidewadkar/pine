@@ -6,7 +6,7 @@ $(window).on("scroll", function () {
         //remove the background property so it comes transparent again (defined in your css)
         $(".navbar").removeClass("active");
     }
-});
+
 
 // enquiry form validation
 
@@ -121,6 +121,5 @@ function validateName() {
   
     document.getElementById(promptLocation).innerHTML = message;
     document.getElementById(promptLocation).style.color =color;
-  
-  
   }
+});
