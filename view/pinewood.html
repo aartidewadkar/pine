@@ -83,7 +83,7 @@
 					</button>
 					<div class="collapse navbar-collapse">
 
-						<div class="navbar-nav flex-fill">
+						<div class="navbar-nav flex-fill" id="header1">
 							<div><a class="nav-item nav-link nav-pad" href="../view/pinewood.html">
 									HOME </a>
 							</div>
@@ -107,16 +107,8 @@
 			aria-hidden="true">
 			<div class="modal-dialog" role="document">
 				<div class="modal-content">
-					<div class="modal-header">
-						<label for="formGroupExampleInput" class="bmd-label-floating">Please Let us know you
-							requirement!
-						</label>
-						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							<span aria-hidden="true">&times;</span>
-						</button>
-					</div>
 					<div class="modal-body">
-						<form>
+						<form name="enquiry" action="#" method="post" onsubmit="return validateForm()">
 							<div class="form-group">
 								<!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
 								<div class="row">
@@ -126,8 +118,8 @@
 								</div>
 								<div class="row">
 									<div class="col-md-1"></div>
-									<input type="text" placeholder="ex. Shreya Agarwal" required
-										class="form-control col-md-9" id="formGroupExampleInput">
+									<input type="text" placeholder="Amit shinde" class="form-control col-md-9"
+										id="formGroupExampleInput" required *>
 								</div>
 
 							</div>
@@ -140,7 +132,7 @@
 								</div>
 								<div class="row">
 									<div class="col-md-1"></div>
-									<input type="email" placeholder="ex. abc@gmail.com" required
+									<input type="email" placeholder=" abc@gmail.com" required *
 										class="form-control col-md-9" id="formGroupExampleInput2">
 								</div>
 							</div>
@@ -153,8 +145,8 @@
 								</div>
 								<div class="row">
 									<div class="col-md-1"></div>
-									<input type="phone" placeholder="ex. +91 9867543267" required
-										class="form-control col-md-9" id="formGroupExampleInput">
+									<input type="tel" placeholder="+91  " required * class="form-control col-md-9"
+										id="formGroupExampleInput" pattern="[0-9]{10}">
 								</div>
 
 							</div>
@@ -168,18 +160,22 @@
 								</div>
 								<div class="row">
 									<div class="col-md-1"></div>
-									<textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required
+									<textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required *
 										class="form-control col-md-9" id="formGroupExampleInput"></textarea>
 								</div>
 
 							</div>
-
+							<hr>
+							<button type="submit" value="Submit" class="btn btn-primary text-center">Submit</button>
 						</form>
 					</div>
-					<div class="modal-footer">
+					<!-- <div class="modal-footer">
+						<button type="button" class="close fadeInLefts" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 
-						<button type="button" class="btn btn-primary">Submit</button>
-					</div>
+
+					</div> -->
 				</div>
 			</div>
 		</div>
@@ -472,10 +468,7 @@
 	</section>
 	<!--blog end-->
 
-
-
-	<div class="content">
-	</div>
+	<!-- footer section start -->
 	<footer id="myFooter">
 		<div class="container">
 			<div class="row">
@@ -527,3 +520,5 @@
 
 
 </body>
+
+</html>

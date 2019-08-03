@@ -5,20 +5,24 @@ section.about-image {
     max-height: 768px;
     padding-bottom: 3%;
 }
+
 .row {
     margin-right: -15px;
     margin-left: -15px;
 }
- .short-title-separator {
+
+.short-title-separator {
     width: 80px;
-    height: 3px; 
+    height: 3px;
     margin: auto;
-    margin-top: 15px; 
+    margin-top: 15px;
     background: #3797dd;
-} 
+}
+
 .col-lg-offset-2 {
     margin-left: 16.66666667%;
 }
+
 /* .col-lg-8 {
     width: 66.66666667%;
 } */
@@ -29,14 +33,18 @@ section.about-image {
     line-height: 1.55em;
     color: #fff;
 }
+
 .short-image-title {
     text-align: center;
     margin-top: 260px !important;
 }
-h1, .h1 {
+
+h1,
+.h1 {
     font-size: 2.77em;
-    color:white;
+    color: white;
 }
+
 /* second navbar start */
 #nav_bar {
     border: 0;
@@ -46,19 +54,23 @@ h1, .h1 {
     height: 50px;
     left: 0px;
 }
-.nav_links{
+
+.nav_links {
     margin: 0%;
 }
+
 .nav_links li {
     display: inline-block;
     margin-top: 15px;
 }
+
 .nav_links li a {
     padding: 0 15.5px;
     color: #fff;
     text-decoration: none;
     font-size: 18px;
 }
+
 .vision h1 {
     /* text-transform: uppercase;
     font-family: inherit; */
@@ -66,9 +78,11 @@ h1, .h1 {
     font-weight: 400;
     color: #2D2C2C;
 }
+
 .col-sm-offset-4 {
     margin-left: 33.33333333%;
 }
+
 .title-separator-primary2 {
     height: 1px;
     position: relative;
@@ -77,40 +91,53 @@ h1, .h1 {
     color: #3797dd;
 
 }
-.title-separator-primary2
-{
+
+.title-separator-primary2 {
     background: #ebebeb;
-   
+
 }
-.margin-top-30 {
-    margin-top: 30px !important;
-}
+
+
 .bottom-padding-45 {
     padding-bottom: 45px;
 }
+
 .visionx p {
     font-family: 'Ubuntu', sans-serif;
-    font-size: 19px;
+    font-size: 16px;
     color: #2D2D2D;
     display: block !important;
     line-height: 1.55em;
 }
+
 .vision h1 {
     text-transform: uppercase;
     font-family: inherit;
 }
-h1{
-    font: 55px Roboto,Arial sans-serif;
+
+h3 {
+    padding-top: 17px;
 }
+
 p {
-    margin: 0 0 10px;
+    margin: 18px 0 10px;
 }
+
 .section-both-shadow {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.35);
 }
+
 .top-padding-45 {
     padding-top: 45px;
 }
-a{
+
+a {
     color: #3797dd;
+}
+
+.grid-content {
+    /* border: 1px solid black; */
+    border: 1px solid black;
+    border-width: 0px 0px 0 1px;
+    justify-content: flex-start;
 }
