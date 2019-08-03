@@ -60,20 +60,12 @@
 
 
     <!-- Enquiry Modal start -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <label for="formGroupExampleInput" class="bmd-label-floating">Please Let us know you
-                        requirement!
-                    </label>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div class="modal-body">
-                    <form>
+                    <form name="enquiry" action="#" method="post" onsubmit="return validateForm()">
                         <div class="form-group">
                             <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
                             <div class="row">
@@ -83,8 +75,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <input type="text" placeholder="ex. Shreya Agarwal" required
-                                    class="form-control col-md-9" id="formGroupExampleInput">
+                                <input type="text" placeholder="Amit shinde" class="form-control col-md-9"
+                                    id="formGroupExampleInput" required *>
                             </div>
 
                         </div>
@@ -97,7 +89,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <input type="email" placeholder="ex. abc@gmail.com" required
+                                <input type="email" placeholder=" abc@gmail.com" required *
                                     class="form-control col-md-9" id="formGroupExampleInput2">
                             </div>
                         </div>
@@ -110,8 +102,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <input type="phone" placeholder="ex. +91 9867543267" required
-                                    class="form-control col-md-9" id="formGroupExampleInput">
+                                <input type="tel" placeholder="+91  " required * class="form-control col-md-9"
+                                    id="formGroupExampleInput" pattern="[0-9]{10}">
                             </div>
 
                         </div>
@@ -120,24 +112,27 @@
                             <div class="row">
                                 <div class="col-md-1"></div>
                                 <label for="formGroupExampleInput"
-                                    class="bmd-label-floating col-md-9 label_center">Comment
-                                    :
+                                    class="bmd-label-floating col-md-9 label_center">Comment :
                                 </label>
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required
+                                <textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required *
                                     class="form-control col-md-9" id="formGroupExampleInput"></textarea>
                             </div>
 
                         </div>
-
+                        <hr>
+                        <button type="submit" value="Submit" class="btn btn-primary text-center">Submit</button>
                     </form>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
+                    <button type="button" class="close fadeInLefts" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
 
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
+
+                </div> -->
             </div>
         </div>
     </div>
@@ -1016,6 +1011,57 @@
             </div>
         </div>
     </section>
+     <!-- footer start -->
+
+     <footer id="myFooter">
+            <div class="container">
+                <div class="row">
+                        <div class="col-sm-3">
+                                <h5>Corporate office</h5>
+                                <ul>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Authorized channel partener</a></li>
+                                    <li><p>Maha Rera A52100013889</p></li>
+                                    
+                                    <li><a href="#">Reviews</a></li>
+                                </ul>
+                            </div>
+                    <div class="col-sm-3">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="../view/Blog.html">Contact us</a></li>
+                            <li><a href="../view/about.html">About us</a></li>
+                            <li><p></p></li>
+                            
+                            <li><a href="#">Reviews</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#">Marketing Partner</a></li>
+                            <p>Imagine Homeland</p>
+                            <li><a href="#">Authorized Channel</a></li>
+                            <p>MAHA RERA A52100013889</p>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="social-networks">
+                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                        </div>
+                        <button type="button" class="btn btn-default">Contact us</button>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>Copyright © 2019 32 PinewoodDrive </p>
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

@@ -60,21 +60,13 @@
     </div>
 
 
-    <!-- Enquiry Modal start -->
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+   <!-- Enquiry Modal start -->
+		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
-                <div class="modal-header">
-                    <label for="formGroupExampleInput" class="bmd-label-floating">Please Let us know you
-                        requirement!
-                    </label>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
                 <div class="modal-body">
-                    <form>
+                    <form name="enquiry" action="#" method="post" onsubmit="return validateForm()">
                         <div class="form-group">
                             <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
                             <div class="row">
@@ -84,8 +76,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <input type="text" placeholder="ex. Shreya Agarwal" required
-                                    class="form-control col-md-9" id="formGroupExampleInput">
+                                <input type="text" placeholder="Amit shinde" class="form-control col-md-9"
+                                    id="formGroupExampleInput" required *>
                             </div>
 
                         </div>
@@ -98,7 +90,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <input type="email" placeholder="ex. abc@gmail.com" required
+                                <input type="email" placeholder=" abc@gmail.com" required *
                                     class="form-control col-md-9" id="formGroupExampleInput2">
                             </div>
                         </div>
@@ -111,8 +103,8 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <input type="phone" placeholder="ex. +91 9867543267" required
-                                    class="form-control col-md-9" id="formGroupExampleInput">
+                                <input type="tel" placeholder="+91  " required * class="form-control col-md-9"
+                                    id="formGroupExampleInput" pattern="[0-9]{10}">
                             </div>
 
                         </div>
@@ -126,18 +118,22 @@
                             </div>
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required
+                                <textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required *
                                     class="form-control col-md-9" id="formGroupExampleInput"></textarea>
                             </div>
 
                         </div>
-
+                        <hr>
+                        <button type="submit" value="Submit" class="btn btn-primary text-center">Submit</button>
                     </form>
                 </div>
-                <div class="modal-footer">
+                <!-- <div class="modal-footer">
+                    <button type="button" class="close fadeInLefts" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
 
-                    <button type="button" class="btn btn-primary">Submit</button>
-                </div>
+
+                </div> -->
             </div>
         </div>
     </div>
@@ -149,7 +145,7 @@
         <div class="bg-image">
             <div class="second-header">
                 <h1>Get in touch</h1>
-                <p>we will connect with you.</p>
+                <p>We will connect with you.</p>
             </div>
         </div>
 
@@ -262,8 +258,8 @@
                                                     <span class="focus-input100"></span>
                                                 </div>
 
-                                                <select class="browser-default custom-select input100">
-                                                    <option selected>Am intressed in</option>
+                                                <select class="browser-default custom-select input100 size">
+                                                    <option selected>I am intressed in</option>
                                                     <option value="1">1 BHK</option>
                                                     <option value="2">2 BHK</option>
                                                     <option value="3">3 BHK</option>
@@ -312,41 +308,34 @@
     <footer id="myFooter">
         <div class="container">
             <div class="row">
-                <div class="col-xs-12 col-sm-6 col-lg-3">
-                    <h4 class="second-color">
-                        <div class="footer-title-separator"></div>
-                        corporate office<span class="special-color">.</span>
-                    </h4>
-                    <address>
-                        <i class="fa fa-map-marker"></i>
-                        <span>Office No. 107</span><br>
-                        <span class="nxtln">3rd Floor</span><br>
-                        <span class="nxtln">Wisteria Fortune</span><br>
-                        <span class="nxtln">Murunji Road, Pune - 411008</span><br><br><span>
-                            <i class="fa fa-envelope fa-sm"></i>
-                            <a href="mailto:contact@namratagroup.com" title="email">info@MobiRag.com</a></span>
-                        <div class="footer-separator">
-
+                    <div class="col-sm-3">
+                            <h5>Corporate office</h5>
+                            <ul>
+                                <li><a href="#">Contact us</a></li>
+                                <li><a href="#">Authorized channel partener</a></li>
+                                <li><p>Maha Rera A52100013889</p></li>
+                                
+                                <li><a href="#">Reviews</a></li>
+                            </ul>
                         </div>
-                        <span><i class="fa fa-phone"></i>(+91) 86000 08951</span>
-                    </address>
-
-
-                </div>
-                <div class="col-sm-2">
-                    <h5>About us</h5>
+                <div class="col-sm-3">
+                    <h5>Quick Links</h5>
                     <ul>
-                        <li><a href="#">Company Information</a></li>
-                        <li><a href="#">Contact us</a></li>
+                        <li><a href="../view/Blog.html">Contact us</a></li>
+                        <li><a href="../view/about.html">About us</a></li>
+                        <li><p></p></li>
+                        
                         <li><a href="#">Reviews</a></li>
                     </ul>
                 </div>
-                <div class="col-sm-2">
+                <div class="col-sm-3">
                     <h5>Support</h5>
                     <ul>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Help desk</a></li>
-                        <li><a href="#">Forums</a></li>
+                        <li><a href="#">Marketing Partner</a></li>
+                        <p>Imagine Homeland</p>
+                        <li><a href="#">Authorized Channel</a></li>
+                        <p>MAHA RERA A52100013889</p>
+                        <li><a href="#"></a></li>
                     </ul>
                 </div>
                 <div class="col-sm-3">
