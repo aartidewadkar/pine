@@ -1,5 +1,8 @@
 $(window).on("scroll", function () {
 
+  function contact_page() {
+    location.href = "../view/Contact.html";
+  }
 
   function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
@@ -122,4 +125,9 @@ $(window).on("scroll", function () {
     document.getElementById(promptLocation).innerHTML = message;
     document.getElementById(promptLocation).style.color = color;
   }
+
+
+
+
+
 });

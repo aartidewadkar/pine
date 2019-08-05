@@ -21,6 +21,7 @@
 
     <link rel="stylesheet" type="text/css" href="../public/css/Blog.css">
     <link rel="stylesheet" type="text/css" href="../public/css/pine.css">
+    <script src="../public/js/pine.js"></script>
 
 </head>
 
@@ -59,8 +60,7 @@
     </div>
 
 
-    <!-- Enquiry Modal start -->
-		<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
@@ -70,7 +70,7 @@
                             <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9">Name :
+                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9"> Name :
                                 </label>
                             </div>
                             <div class="row">
@@ -111,32 +111,43 @@
                             <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
                             <div class="row">
                                 <div class="col-md-1"></div>
-                                <label for="formGroupExampleInput"
-                                    class="bmd-label-floating col-md-9 label_center">Comment :
-                                </label>
+
+                                <select class="browser-default custom-select">
+                                    <option selected>Intressed in</option>
+                                    <option value="1">1 BHK</option>
+                                    <option value="2">2 BHK</option>
+                                    <option value="3">3 BHK</option>
+                                </select>
                             </div>
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required *
-                                    class="form-control col-md-9" id="formGroupExampleInput"></textarea>
-                            </div>
+
+
+
+                            <!-- <div class="col-md-1"></div>
+									<label for="formGroupExampleInput"
+										class="bmd-label-floating col-md-9 label_center">Comment :
+									</label>
+								</div>
+								<div class="row">
+									<div class="col-md-1"></div>
+									<textarea type="text-area" row=4 col=4 placeholder="ex. abcdefgh" required *
+										class="form-control col-md-9" id="formGroupExampleInput"></textarea>
+								</div> -->
 
                         </div>
                         <hr>
-                        <button type="submit" value="Submit" class="btn btn-primary text-center">Submit</button>
+                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
                 <!-- <div class="modal-footer">
-                    <button type="button" class="close fadeInLefts" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
+						<button type="button" class="close fadeInLefts" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
 
 
-                </div> -->
+					</div> -->
             </div>
         </div>
     </div>
-    <!--Enquiry Model ends here-->
 
     <!-- Blogs section start -->
     <section class="contact-bg-header">
@@ -1011,57 +1022,63 @@
             </div>
         </div>
     </section>
-     <!-- footer start -->
-
-     <footer id="myFooter">
-            <div class="container">
-                <div class="row">
-                        <div class="col-sm-3">
-                                <h5>Corporate office</h5>
-                                <ul>
-                                    <li><a href="#">Contact us</a></li>
-                                    <li><a href="#">Authorized channel partener</a></li>
-                                    <li><p>Maha Rera A52100013889</p></li>
-                                    
-                                    <li><a href="#">Reviews</a></li>
-                                </ul>
-                            </div>
-                    <div class="col-sm-3">
-                        <h5>Quick Links</h5>
-                        <ul>
-                            <li><a href="../view/Blog.html">Contact us</a></li>
-                            <li><a href="../view/about.html">About us</a></li>
-                            <li><p></p></li>
-                            
-                            <li><a href="#">Reviews</a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5>Support</h5>
-                        <ul>
-                            <li><a href="#">Marketing Partner</a></li>
-                            <p>Imagine Homeland</p>
-                            <li><a href="#">Authorized Channel</a></li>
-                            <p>MAHA RERA A52100013889</p>
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="social-networks">
-                            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
-                        </div>
-                        <button type="button" class="btn btn-default">Contact us</button>
+    <!-- footer start -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>CORPORATE OFFICE.</h5>
+                    <div class="textwidget">
+                        <address><i class="fa fa-map-marker"></i><span> Office No. 107</span><br>
+                            <span class="nxtln"> 1st Floor</span><br>
+                            <span class="nxtln"> Westeria Fortune</span><br>
+                            <span class="nxtln"> Murunji Road, Pune - 411033</span>
+                            <p></p>
+                            <p><span><i class="fa fa-envelope fa-sm"></i><a href="#" title="email">
+                                        contact@mobirag.com</a></span></p>
+                            <div class="footer-separator"></div>
+                            <p><span><i class="fa fa-phone"></i> (+91) 9850161144</span></p>
+                        </address>
                     </div>
                 </div>
+
+
+                <div class="col-sm-3">
+                    <h5>Quick Links</h5>
+                    <ul>
+                        <li><a href="../view/Blog.html">Contact us</a></li>
+                        <li><a href="../view/Blog.html">Our blog</a></li>
+                        <li><a href="../view/about.html">About us</a></li>
+                        <li><a href="../view/Blog.html"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Marketing Partner</a></li>
+                        <li></li><a>Imagine Homeland</a></li>
+                        <li><a href="#">Authorized Channel</a></li>
+                        <li><a>MAHA RERA A52100013889</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Follow Us</h5>
+                    <div class="social-networks">
+                        <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <a href="../view/Contact.html" class="btn btn-info" role="button">Contact Us</a>
+                </div>
             </div>
-            <div class="footer-copyright">
-                <p>Copyright © 2019 32 PinewoodDrive </p>
-            </div>
-        </footer>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-        <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2019 32 PinewoodDrive </p>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 
 </html>

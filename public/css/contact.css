@@ -21,6 +21,15 @@
     flex-direction: row;
 }
 
+.req {
+    color: red;
+    font-weight: bold;
+}
+
+.bg-image .second-header p {
+    margin: 5px 0 10px;
+}
+
 .contact-box {
     width: 50%;
     display: flex;
@@ -50,9 +59,13 @@ h3 {
 }
 
 address.contact-info {
-    margin: -3px 0 0 30px;
+    margin: -0px 0 0 -50px;
     display: block;
-    padding-top: 45px;
+    padding-top: 63px;
+}
+
+#myFooter .social-networks a {
+    font-size: 20px;
 }
 
 address.contact-info span {
@@ -108,10 +121,12 @@ address.contact-info i.fa {
     max-width: 712px;
     margin: 0px auto;
 }
-.second-header h1{
+
+.second-header h1 {
     font-size: 40px;
-    font-weight:bold;
+    font-weight: bold;
 }
+
 h1 {
     color: black;
     font-size: 3.77em;
@@ -185,10 +200,12 @@ p {
     padding: 0 30px 0 30px;
     /* margin-bottom:5px; */
 }
+
 input.input100 {
     height: 30px;
 }
-.size{
+
+.size {
     color: #555555;
     font-family: sans-serif;
 }
