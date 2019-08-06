@@ -14,7 +14,6 @@
      margin: 0px auto;
 
  }
-
  h1 {
      color: black;
      font-size: 2.77em;
@@ -27,10 +26,11 @@
 
  .colored-line {
      background-color: #17a2b8;
+     margin: auto
  }
 
  .colored-line {
-     margin: auto;
+     margin-top: 15px;
      display: block;
      width: 80px;
      height: 2px;
@@ -315,3 +315,10 @@
  address {
      margin-top: 14px;
  }
+ input[type="submit"] {
+    border-radius: 5%;
+ }
+ .posts-navigation .nav-previous {
+    font-weight: bold;
+    text-align: left;
+}

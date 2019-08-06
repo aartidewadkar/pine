@@ -440,3 +440,7 @@ masonry-grid .masonry-grid-item {
 .blog-grid1-title h4 {
     font-size: 17px;
 }
+.map .map_container .text-center{
+    /* padding-bottom: 39px; */
+    padding-top: 50px;
+}
