@@ -17,8 +17,8 @@ h1 {
     font-weight: 700;
     padding-top: 30%;
 }
-/* body */
-.site-content .container {
+body */
+ .site-content .container {
     width: 95% !important;
 }
 
@@ -28,8 +28,8 @@ h1 {
      margin-bottom: 2em;
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0.15);  
 
-}
-.site-content {
+} 
+ .site-content {
     margin-top: 45px;
 }
 .home .entry-header {
@@ -37,15 +37,15 @@ h1 {
     text-transform: uppercase;
     letter-spacing: 2px;
     width: 50%;
-}
+} 
 .
- /* .entry-header {
+  .entry-header {
     text-align: center;
     letter-spacing: 2px;
     width: 50%;
     font-size: 18px;
-} */
-.entry-meta {
+} 
+ .entry-meta {
     clear: both;
     color: #727272;
     text-transform: capitalize;
@@ -58,4 +58,4 @@ h1 {
     min-height: 1px;
     padding-right: 15px;
     padding-left: 15px;
-}
+} 
