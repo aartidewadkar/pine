@@ -12,6 +12,9 @@
     background-color: rgb(73, 146, 230);
 
 }
+#myFooter .social-networks a {
+font-size: 20px;
+}
 
 .req {
     color: red;
@@ -442,5 +445,8 @@ masonry-grid .masonry-grid-item {
 }
 .map .map_container .text-center{
     /* padding-bottom: 39px; */
-    padding-top: 50px;
+    padding-top: 30px;
+}
+.map .container{
+    padding-bottom: 45px;
 }

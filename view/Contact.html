@@ -186,7 +186,7 @@
                                                     href="mailto:contact@genesishr.com">contact@MobiRag.com</a></span><br>
                                             <span><i class="fa fa-phone"></i>86000 08951</span></span><br>
                                         <span><i class="fa fa-globe"></i><a
-                                                href="https://32Pinewooddrive.com">https://32Pinewooddrive.com</a></span>
+                                                href="https://pinewooddrive.com">https://32Pinewooddrive.com</a></span>
                                         <span class="contact-social">
                                             <div class="agent-social-bar margin-top-30">
                                                 <div align="center">
@@ -235,35 +235,36 @@
                                 <div class="contact-box">
                                     <div class="container-contact100">
                                         <div class="wrap-contact100">
-                                            <form onclick="return validateForm()" method="POST"
-                                                class="contact100-form validate-form">
+                                            <form name="enquiry" action="#" method="post"
+                                                onsubmit="return validateForm()">
+                                                <div class="contact100-form validate-form form-group">
                                                 <span class="contact100-form-title">
                                                     Contact Us
                                                 </span>
 
                                                 <label class="label-input100" for="first-name"></label>
                                                 <div class="wrap-input100 rs1 validate-input">
-                                                    <input id="first-name" class="input100" type="text"
-                                                        name="first-name" placeholder="First name">
+                                                    <input id="formGroupExampleInput" class="input100" type="text"
+                                                        name="first-name" placeholder="First name" required *>
                                                     <span class="focus-input100"></span>
                                                 </div>
                                                 <div class="wrap-input100 rs1 validate-input">
-                                                    <input class="input100" type="text" name="last-name"
-                                                        placeholder="Last name">
+                                                    <input id="formGroupExampleInput" class="input100" type="text" name="last-name"
+                                                        placeholder="Last name"  required * >
                                                     <span class="focus-input100"></span>
                                                 </div>
 
                                                 <label class="label-input100" for="email"></label>
                                                 <div class="wrap-input100 validate-input">
-                                                    <input id="email" class="input100" type="text" name="email"
-                                                        placeholder="Your email">
+                                                    <input id="formGroupExampleInput2" class="input100" type="text" name="email"
+                                                        placeholder="Your email" required *>
                                                     <span class="focus-input100"></span>
                                                 </div>
 
                                                 <label class="label-input100" for="phone"></label>
                                                 <div class="wrap-input100">
-                                                    <input id="phone" class="input100" type="text" name="phone"
-                                                        placeholder="Your phone">
+                                                    <input id="formGroupExampleInput" pattern="[0-9]{10}" class="input100" type="text" name="phone"
+                                                        placeholder="Your phone" required *>
                                                     <span class="focus-input100"></span>
                                                 </div>
 
@@ -275,20 +276,21 @@
                                                 </select>
 
 
-                                                <label class="label-input100" for="message"></label>
-                                                <div class="wrap-input100 validate-input">
+                                                 <label class="label-input100" for="message"></label>
+                                                <!-- <div class="wrap-input100 validate-input">
                                                     <textarea id="message" class="input100" name="message"
                                                         placeholder="Your query"></textarea>
                                                     <span class="focus-input100"></span>
-                                                </div>
+                                                </div> -->
 
-                                                <!-- <div class="container-contact100-form-btn"> -->
-                                                <button class="contact100-form-btn" style="width: 27%">
+                                                 <div class="container-contact100-form-btn"> 
+                                                        <button type="submit" value="Submit" class="btn btn-primary" style="margin-left: 490%; width: 120%;margin-top: 10%;">Submit</button>
+                                                 <!-- <button class="contact100-form-btn" style="width: 27%">
                                                     Submit
-                                                </button>
+                                                </button> -->
                                                 <span class='error-message' id='submit-error'></span>
 
-                                            </form>
+                                            </form> 
                                         </div>
                                     </div>
                                 </div>
@@ -303,15 +305,21 @@
     </div>
     <!--end row-->
 
-    <div class="container">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60507.77889533231!2d73.68317!3d18.585929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48d804381fd1bcc4!2s32+Pinewood+Drive!5e0!3m2!1sen!2sus!4v1564802608628!5m2!1sen!2sus"
-            width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    <!-- Location -->
+    <div class="map">
+        <div class="map_container">
+            <h2 class="text-center" style="padding-bottom:30px">Location</h2>
+            <div class="title-separator-primary2" style="top: -35px; height: 2px;"></div>
+            <div class="container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d60507.77889533231!2d73.68317!3d18.585929!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x48d804381fd1bcc4!2s32+Pinewood+Drive!5e0!3m2!1sen!2sus!4v1564802608628!5m2!1sen!2sus"
+                    width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
     </div>
+    <!-- end Location -->
 
-    <!-- <div class="container">
-        <br>
-    </div> -->
+
     <!-- footer start -->
     <footer id="myFooter">
         <div class="container">
