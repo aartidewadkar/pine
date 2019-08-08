@@ -19,13 +19,53 @@
     <link rel="stylesheet" type="text/css" href="../public/css/about.css">
     <link rel="stylesheet" type="text/css" href="../public/css/pine.css">
     <script src="../public/js/pine.js"></script>
+    <style>
+            img.logo-navbar {
+                /* width: 7rem !important;
+                height: 7rem !important; */
+                width: 50%;
+                height: auto;
+            }
+       </style> 
 </head>
 
-<body>
 
-    <div class="container ">
-        <!-- <div class="row">
-                    <div class="col-md-12"> -->
+<body>
+        <div id="header">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
+                    <a href="#" class="navbar-brand">
+                        <img src="../public/images/logo.png" class="logo-navbar" alt="Responsive image">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../view/home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../view/about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../view/Blog.html">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                    <a class="nav-link" href="../view/Contact.html">Site Updates</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../view/Contact.html">Contact us</a>
+                            </li>
+        
+                        </ul>
+                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
+                            Enquiry Now
+                        </button>
+                    </div>
+        
+                </nav>
+
+    <!-- <div class="container ">
         <nav id="hamburger" class="navbar navbar-expand-lg navbar-light fixed-top">
             <div class=" container">
                 <a href="#" class="navbar-brand">
@@ -52,7 +92,7 @@
                 </button>
             </div>
         </nav>
-    </div>
+    </div> -->
 
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">

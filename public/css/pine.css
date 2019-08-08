@@ -36,8 +36,8 @@
 .nav-link:hover {
     border-bottom: 4px solid #d36262;
     padding: 6px 0;
-    background-color: ivory;
-    color: rgb(236, 232, 225);
+    /* background-color: rgb(94, 59, 218); */
+    color: rgba(44, 141, 40, 0.616);
 }
 
 .text-center {

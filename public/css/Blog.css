@@ -43,6 +43,9 @@
      display: block;
 
  }
+ .post-list h1.entry-title a {
+     color: #be5000;
+ }
 
  .post-list article {
      float: left;
@@ -165,18 +168,6 @@
      font-weight: bold;
  }
 
- /* --submit button css */
- /* input[type="submit"] {
-    border-radius: 3px;
-    color: #fff;
-    text-shadow: none;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.6;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    
-} */
  input[type="submit"] {
      background: rgb(55, 151, 221) none repeat scroll 0 0 !important;
      border: medium none !important;
@@ -321,4 +312,7 @@
  .posts-navigation .nav-previous {
     font-weight: bold;
     text-align: left;
+}
+#sidebar-secondary ul {
+    padding-left: 0;
 }
