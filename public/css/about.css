@@ -19,9 +19,9 @@
     background: #3797dd;
 }
 
-.col-lg-offset-2 {
+/* .col-lg-offset-2 {
     margin-left: 16.66666667%;
-}
+} */
 
 /* .col-lg-8 {
     width: 66.66666667%;
@@ -32,6 +32,8 @@
     font-size: 19px;
     line-height: 1.55em;
     color: #fff;
+    margin-left: 10%;
+    margin-right: 10%
 }
 
 .short-image-title {
