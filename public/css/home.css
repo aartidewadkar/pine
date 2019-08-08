@@ -1,0 +1,15 @@
+.navbar {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: ivory;
+    padding-left: 2.5rem
+}
+
+.nav-link:hover {
+    border-bottom: 4px solid #d36262;
+    padding: 6px 0;
+    background-color: #a9b357;
+    color: rgb(141, 116, 66);
+}

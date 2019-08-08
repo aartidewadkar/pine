@@ -1,9 +1,9 @@
 /* BLOG START */
+.bg-image {
 
-section.about-image {
-    height: 768px;
-    max-height: 768px;
-    padding-bottom: 3%;
+    background: #152560 url('https://www.namratagroup.com/img/about-image.jpg') no-repeat center;
+    height: 500px;
+    width: 100%;
 }
 
 .row {
@@ -28,7 +28,7 @@ section.about-image {
 } */
 
 .about-desc p {
-    display: block;
+    /* display: block; */
     font-size: 19px;
     line-height: 1.55em;
     color: #fff;

@@ -8,16 +8,22 @@
     background-color: rgb(0, 0, 0, 0.4);
 }
 
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 2.5rem;
+    padding-left: .5rem;
+}
+
 .active {
-    background-color: rgb(73, 146, 230);
+    /* background-color: rgb(73, 146, 230); */
 
 }
+
 #myFooter .social-networks a {
-font-size: 20px;
+    font-size: 20px;
 }
 
 .req {
-    color: red;
+    /* color: red; */
     font-weight: bold;
 }
 
@@ -30,8 +36,8 @@ font-size: 20px;
 .nav-link:hover {
     border-bottom: 4px solid #d36262;
     padding: 6px 0;
-    background-color: #a9b357;
-    color: rgb(141, 116, 66);
+    background-color: ivory;
+    color: rgb(236, 232, 225);
 }
 
 .text-center {
@@ -443,10 +449,12 @@ masonry-grid .masonry-grid-item {
 .blog-grid1-title h4 {
     font-size: 17px;
 }
-.map .map_container .text-center{
+
+.map .map_container .text-center {
     /* padding-bottom: 39px; */
     padding-top: 30px;
 }
-.map .container{
+
+.map .container {
     padding-bottom: 45px;
 }

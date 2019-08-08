@@ -6,9 +6,9 @@ $(window).on("scroll", function () {
 
   function scrollFunction() {
     if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById(".header1").style.fontSize = "30px";
+      document.getElementById(".header").style.fontSize = "30px";
     } else {
-      document.getElementById(".header1").style.fontSize = "90px";
+      document.getElementById(".header").style.fontSize = "90px";
     }
   }
   // enquiry form validation
@@ -126,6 +126,13 @@ $(window).on("scroll", function () {
     document.getElementById(promptLocation).style.color = color;
   }
 
+  // function scrollFunction() {
+  //   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+  //     document.getElementById("header").style.fontSize = "30px";
+  //   } else {
+  //     document.getElementById("header").style.fontSize = "90px";
+  //   }
+  // }
 
 
 
