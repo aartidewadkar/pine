@@ -13,10 +13,6 @@
     padding-left: .5rem;
 }
 
-.active {
-    /* background-color: rgb(73, 146, 230); */
-
-}
 
 #myFooter .social-networks a {
     font-size: 20px;
@@ -216,10 +212,10 @@ p.ecocity {
 }
 
 .modal-dialog {
-    position: fixed;
-    width: 22%;
-    top: 7%;
-    right: 1.5%;
+    /* position: absolute; */
+    /* width: 50%; */
+    top: 15%;
+    /* right: 1.5em; */
     /* margin: 0.3rem; */
 }
 
