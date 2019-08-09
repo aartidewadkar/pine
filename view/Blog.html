@@ -25,23 +25,23 @@
 
 </head>
 <style>
-        img.logo-navbar {
-            /* width: 7rem !important;
+    img.logo-navbar {
+        /* width: 7rem !important;
             height: 7rem !important; */
-            width: 50%;
-            height: auto;
-        }
-    
-        .carousel-inner img {
-            width: 100%;
-            height: 100%;
-        }
-    </style>
-    
-    
+        width: 50%;
+        height: auto;
+    }
+
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+</style>
+
+
 
 <body>
-        <div class="header">
+    <div class="header">
         <nav class="navbar navbar-expand-md bg-dark navbar-dark sticky-top">
             <a href="#" class="navbar-brand">
                 <img src="../public/images/logo.png" class="logo-navbar" alt="Responsive image">
@@ -52,19 +52,19 @@
             <div class="collapse navbar-collapse" id="collapsibleNavbar">
                 <ul class="navbar-nav">
                     <li class="nav-item">
-                        <a class="nav-link" href="../view/home.html">Home</a>
+                        <a class="nav-link" href="../view/home.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../view/about.html">About us</a>
+                        <a class="nav-link" href="../view/about.html">ABOUT US</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../view/Blog.html">Blog</a>
+                        <a class="nav-link" href="../view/Blog.html">BLOG</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="../view/construction.html">Site updates</a>
-                        </li>
+                        <a class="nav-link" href="../view/construction.html">SITE UPDATES</a>
+                    </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="../view/Contact.html">Contact us</a>
+                        <a class="nav-link" href="../view/Contact.html">CONTACT US</a>
                     </li>
 
                 </ul>
@@ -76,103 +76,81 @@
         </nav>
     </div>
 
-    <!-- <div class="container ">
-        <nav id="hamburger" class="navbar navbar-expand-lg navbar-light fixed-top">
-            <div class=" container">
-                <a href="#" class="navbar-brand">
-                    <img src="../public/images/logo.png" height="88" alt="CoolBrand">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
-                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse">
+     <!-- Enquiry Modal start -->
+     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
+     <div class="modal-dialog" role="document">
+         <div class="modal-content">
+             <div class="modal-body">
+                 <form name="enquiry" action="#" method="post" onsubmit="return validateForm()">
+                     <div class="form-group">
+                         <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                         <div class="row">
+                             <div class="col-md-1"></div>
+                             <label for="formGroupExampleInput" class="bmd-label-floating col-md-9"> Name :
+                             </label>
+                         </div>
+                         <div class="row">
+                             <div class="col-md-1"></div>
+                             <input type="text" placeholder="Amit shinde" class="form-control col-md-9"
+                                 id="formGroupExampleInput" required *>
+                         </div>
 
-                    <div class="navbar-nav flex-fill" style="padding-left:20px">
-                        <div><a class="nav-item nav-link nav-pad" href="../view/pinewood.html">
-                                HOME </a>
-                        </div>
-                        <div><a class="nav-item nav-link" href="../view/about.html">ABOUT US</a></div>
-                        <div><a class="nav-item nav-link" href="../view/Blog.html">BLOG</a></div>
-                        <div><a class="nav-item nav-link" href="../view/construction.html">SITE UPDATES</a></div>
-                        <div><a class="nav-item nav-link" href="../view/Contact.html">CONTACT</a> </div>
-                    </div>
-                </div>
-                <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
-                    Enquiry Now
-                </button>
-            </div>
-        </nav>
-    </div> -->
+                     </div>
+                     <div class="form-group bmd-form-group">
+                         <!-- manually specified -->
+                         <div class="row">
+                             <div class="col-md-1"></div>
+                             <label for="formGroupExampleInput2" class="bmd-label-floating col-md-9">Email :
+                             </label>
+                         </div>
+                         <div class="row">
+                             <div class="col-md-1"></div>
+                             <input type="email" placeholder=" abc@gmail.com" required *
+                                 class="form-control col-md-9" id="formGroupExampleInput2">
+                         </div>
+                     </div>
+                     <div class="form-group">
+                         <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                         <div class="row">
+                             <div class="col-md-1"></div>
+                             <label for="formGroupExampleInput" class="bmd-label-floating col-md-9">Phone :
+                             </label>
+                         </div>
+                         <div class="row">
+                             <div class="col-md-1"></div>
+                             <input type="tel" placeholder="+91  " required * class="form-control col-md-9"
+                                 id="formGroupExampleInput" pattern="[0-9]{10}">
+                         </div>
+
+                     </div>
+                     <div class="form-group">
+                         <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                         <div class="row">
+                             <div class="col-md-1"></div>
+
+                             <select class="browser-default custom-select">
+                                 <option selected>Intressed in</option>
+                                 <option value="1">1 BHK</option>
+                                 <option value="2">2 BHK</option>
+                                 <option value="3">3 BHK</option>
+                             </select>
+                         </div>
+                     </div>
+                     <hr>
+                     <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                 </form>
+             </div>
+         </div>
+     </div>
+ </div>
+ 
+ <!--Enquiry Model ends here -->
 
 
-    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <form name="enquiry" action="#" method="post" onsubmit="return validateForm()">
-                        <div class="form-group">
-                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9"> Name :
-                                </label>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <input type="text" placeholder="Amit shinde" class="form-control col-md-9"
-                                    id="formGroupExampleInput" required *>
-                            </div>
 
-                        </div>
-                        <div class="form-group bmd-form-group">
-                            <!-- manually specified -->
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <label for="formGroupExampleInput2" class="bmd-label-floating col-md-9">Email :
-                                </label>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <input type="email" placeholder=" abc@gmail.com" required *
-                                    class="form-control col-md-9" id="formGroupExampleInput2">
-                            </div>
-                        </div>
-                        <div class="form-group">
-                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9">Phone :
-                                </label>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-1"></div>
-                                <input type="tel" placeholder="+91  " required * class="form-control col-md-9"
-                                    id="formGroupExampleInput" pattern="[0-9]{10}">
-                            </div>
 
-                        </div>
-                        <div class="form-group">
-                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
-                            <div class="row">
-                                <div class="col-md-1"></div>
 
-                                <select class="browser-default custom-select">
-                                    <option selected>Intressed in</option>
-                                    <option value="1">1 BHK</option>
-                                    <option value="2">2 BHK</option>
-                                    <option value="3">3 BHK</option>
-                                </select>
-                            </div>
-                        </div>
-                        <hr>
-                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Blogs section start -->
     <section class="contact-bg-header">
@@ -221,24 +199,20 @@
                                         class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup</a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32
+                                                PinewoodGroup</a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">5 things you should crosscheck before buying property from any
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">5 things you
+                                        should crosscheck before buying property from any
                                         company</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
@@ -266,8 +240,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="Top locations of Pune to buy 2 bhk luxury homes.">
+                                    <a href="#" title="Top locations of Pune to buy 2 bhk luxury homes.">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -289,24 +262,20 @@
                                         class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup</a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32
+                                                PinewoodGroup</a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">Top locations of Pune to buy 2 bhk luxury homes.</a></h1>
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">Top locations of
+                                        Pune to buy 2 bhk luxury homes.</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
 
@@ -333,8 +302,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="Trace the growth of Hinjewadi in under 3 minutes.">
+                                    <a href="#" title="Trace the growth of Hinjewadi in under 3 minutes.">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -352,28 +320,23 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup </a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32 PinewoodGroup
+                                            </a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">Trace the growth of Hinjewadi in under 3 minutes.</a></h1>
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">Trace the growth
+                                        of Hinjewadi in under 3 minutes.</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
 
@@ -385,7 +348,7 @@
                                     as a city, invites various talented individuals everyday in order to work at the
                                     Hinjewadi
                                     IT Hub. Everyday, thousands of people move to Pune. This gives rise to the need for
-                                    residential spaces in the city. 
+                                    residential spaces in the city.
                                 </p>
                             </div><!-- .entry-content -->
 
@@ -399,8 +362,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="The impact of Union Budget on real estate industry">
+                                    <a href="#" title="The impact of Union Budget on real estate industry">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -418,28 +380,23 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup</a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32
+                                                PinewoodGroup</a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">The impact of Union Budget on real estate industry</a></h1>
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">The impact of
+                                        Union Budget on real estate industry</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
 
@@ -465,8 +422,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="The 32 Pinewood Community">
+                                    <a href="#" title="The 32 Pinewood Community">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -484,35 +440,30 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup </a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32 PinewoodGroup
+                                            </a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">The
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">The
                                         32 Pinewood Group Community</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
 
                             </header><!-- .entry-header -->
                             <div itemprop="description" class="entry-content entry-summary">
-                                <p>The 32 Pinewood Community inewood Group is a customer centric enterprise. We believe in
+                                <p>The 32 Pinewood Community inewood Group is a customer centric enterprise. We believe
+                                    in
                                     the
                                     dreams, aspirations and hopes of our customers and strive to match up to them. With
                                     all
@@ -552,28 +503,23 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup </a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32 PinewoodGroup
+                                            </a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">What are young investors looking for in Pune real estate
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">What are young
+                                        investors looking for in Pune real estate
                                         investment?</a>
                                 </h1>
                                 <div class="colored-line-left"></div>
@@ -600,8 +546,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="Benefits of staying in Talegaon for Hinjawadi IT professionals">
+                                    <a href="#" title="Benefits of staying in Talegaon for Hinjawadi IT professionals">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -619,28 +564,23 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup </a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32 PinewoodGroup
+                                            </a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">Benefits of staying in Talegaon for Hinjawadi IT
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">Benefits of
+                                        staying in Talegaon for Hinjawadi IT
                                         professionals</a>
                                 </h1>
                                 <div class="colored-line-left"></div>
@@ -668,8 +608,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="Trace the growth of Tathawade in under 3 minutes.">
+                                    <a href="#" title="Trace the growth of Tathawade in under 3 minutes.">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -687,28 +626,23 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup </a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32 PinewoodGroup
+                                            </a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">Trace the growth of Tathawade in under 3 minutes.</a></h1>
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">Trace the growth
+                                        of Tathawade in under 3 minutes.</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
 
@@ -733,8 +667,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="How Locations affect your health">
+                                    <a href="#" title="How Locations affect your health">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -752,28 +685,23 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup </a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32 PinewoodGroup
+                                            </a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">How Locations affect your health</a></h1>
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">How Locations
+                                        affect your health</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
 
@@ -798,8 +726,7 @@
                             <header class="entry-header">
 
                                 <div class="post-img-wrap">
-                                    <a href="#"
-                                        title="Importance of Sports Amenities">
+                                    <a href="#" title="Importance of Sports Amenities">
 
                                         <picture itemscope="" itemprop="image">
                                             <source media="(max-width: 600px)"
@@ -817,28 +744,23 @@
 
 
                                 <div class="entry-meta list-post-entry-meta">
-                                    <span itemscope="" itemprop="author" itemtype="#"
-                                        class="entry-author post-author">
+                                    <span itemscope="" itemprop="author" itemtype="#" class="entry-author post-author">
                                         <span itemprop="name" class="entry-author author vcard">
                                             <i class="fa fa-user" aria-hidden="true"></i>
-                                            <a itemprop="url" class="url fn n"
-                                                href="#"
-                                                rel="author">32 PinewoodGroup </a>
+                                            <a itemprop="url" class="url fn n" href="#" rel="author">32 PinewoodGroup
+                                            </a>
                                         </span>
                                     </span>
                                     <span class="posted-in entry-terms-categories" itemprop="articleSection">
                                         <i class="fa fa-folder" aria-hidden="true"></i>
-                                        Posted in <a href="#"
-                                            rel="category tag">Blog</a> </span>
-                                    <a href="#"
-                                        class="post-comments">
+                                        Posted in <a href="#" rel="category tag">Blog</a> </span>
+                                    <a href="#" class="post-comments">
                                         <i class="fa fa-comment" aria-hidden="true"></i>
                                         No comments </a>
                                 </div><!-- .entry-meta -->
 
-                                <h1 class="entry-title" itemprop="headline"><a
-                                        href="#"
-                                        rel="bookmark">Importance of Sports Amenities</a></h1>
+                                <h1 class="entry-title" itemprop="headline"><a href="#" rel="bookmark">Importance of
+                                        Sports Amenities</a></h1>
                                 <div class="colored-line-left"></div>
                                 <div class="clearfix"></div>
 
@@ -876,8 +798,7 @@
                         <h2 class="widget-title">Search Blog</h2>
                         <div class="colored-line-left"></div>
                         <div class="clearfix widget-title-margin"></div>
-                        <form role="search" method="get" class="search-form"
-                            action="#">
+                        <form role="search" method="get" class="search-form" action="#">
                             <label>
                                 <span class="screen-reader-text"></span>
                                 <input type="search" class="search-field" placeholder="Search …" value="" name="s">
@@ -890,8 +811,7 @@
                         <div class="colored-line-left"></div>
                         <div class="clearfix widget-title-margin"></div>
                         <div class="textwidget">
-                            <p><a href="#"><img
-                                        class="alignnone wp-image-255 size-full"
+                            <p><a href="#"><img class="alignnone wp-image-255 size-full"
                                         src="http://namratagroup.com/blog/wp-content/uploads/2019/02/Featured-Ads-english-01-optimized.jpg"
                                         width="281" alt="Happycity Talegaon Pune"></a></p>
                         </div>
@@ -929,14 +849,13 @@
 
                             <li>
                                 <div class="lptw-post-small-thumbnail">
-                                    <a href="#"
-                                        class="lptw-thumbnail-link"><img width="100" height="100"
+                                    <a href="#" class="lptw-thumbnail-link"><img width="100" height="100"
                                             src="https://www.namratagroup.com/blog/wp-content/uploads/2019/07/5-things-you-should-crosscheck-before-buying-property-150x150.jpg"
                                             class="attachment-100x100 size-100x100 wp-post-image"
                                             alt="Buying Property from any Company"></a>
                                     <div class="lptw-post-header">
-                                        <a href="#"
-                                            class="lptw-header-link">5 things you should crosscheck before buying
+                                        <a href="#" class="lptw-header-link">5 things you should crosscheck before
+                                            buying
                                             property
                                             from
                                             any company</a>
@@ -946,14 +865,12 @@
 
                             <li>
                                 <div class="lptw-post-small-thumbnail">
-                                    <a href="#"
-                                        class="lptw-thumbnail-link"><img width="100" height="100"
+                                    <a href="#" class="lptw-thumbnail-link"><img width="100" height="100"
                                             src="https://www.namratagroup.com/blog/wp-content/uploads/2019/07/Top-locations-of-Pune-to-buy-2-bhk-luxury-homes-150x150.jpg"
                                             class="attachment-100x100 size-100x100 wp-post-image"
                                             alt="2 BHK Luxury homes"></a>
                                     <div class="lptw-post-header">
-                                        <a href="#"
-                                            class="lptw-header-link">Top locations of Pune to buy 2 bhk luxury
+                                        <a href="#" class="lptw-header-link">Top locations of Pune to buy 2 bhk luxury
                                             homes.</a>
                                     </div>
                                 </div>
@@ -961,14 +878,12 @@
 
                             <li>
                                 <div class="lptw-post-small-thumbnail">
-                                    <a href="#"
-                                        class="lptw-thumbnail-link"><img width="100" height="100"
+                                    <a href="#" class="lptw-thumbnail-link"><img width="100" height="100"
                                             src="https://www.namratagroup.com/blog/wp-content/uploads/2019/07/Trace-the-growth-of-Hinjewadi-in-under-3-minutes-150x150.jpg"
                                             class="attachment-100x100 size-100x100 wp-post-image"
                                             alt="Growth of Hinjewadi"></a>
                                     <div class="lptw-post-header">
-                                        <a href="#"
-                                            class="lptw-header-link">Trace the growth of Hinjewadi in under 3
+                                        <a href="#" class="lptw-header-link">Trace the growth of Hinjewadi in under 3
                                             minutes.</a>
                                     </div>
                                 </div>
@@ -976,14 +891,12 @@
 
                             <li>
                                 <div class="lptw-post-small-thumbnail">
-                                    <a href="#"
-                                        class="lptw-thumbnail-link"><img width="100" height="100"
+                                    <a href="#" class="lptw-thumbnail-link"><img width="100" height="100"
                                             src="https://www.namratagroup.com/blog/wp-content/uploads/2019/07/The-impact-of-Union-Budget-on-real-estate-industrY-150x150.jpg"
                                             class="attachment-100x100 size-100x100 wp-post-image"
                                             alt="Union Budget"></a>
                                     <div class="lptw-post-header">
-                                        <a href="#"
-                                            class="lptw-header-link">The impact of Union Budget on real estate
+                                        <a href="#" class="lptw-header-link">The impact of Union Budget on real estate
                                             industry</a>
                                     </div>
                                 </div>
@@ -991,14 +904,12 @@
 
                             <li>
                                 <div class="lptw-post-small-thumbnail">
-                                    <a href="#"
-                                        class="lptw-thumbnail-link"><img width="100" height="100"
+                                    <a href="#" class="lptw-thumbnail-link"><img width="100" height="100"
                                             src="https://www.namratagroup.com/blog/wp-content/uploads/2019/07/Namrata-Community-150x150.jpg"
                                             class="attachment-100x100 size-100x100 wp-post-image"
                                             alt="Namrata Community"></a>
                                     <div class="lptw-post-header">
-                                        <a href="#"
-                                            class="lptw-header-link">The 32 Pinewood Community</a>
+                                        <a href="#" class="lptw-header-link">The 32 Pinewood Community</a>
                                     </div>
                                 </div>
                             </li>
@@ -1009,62 +920,63 @@
             </div>
         </div>
     </section>
-   <!-- footer start -->
-	<footer id="myFooter">
-            <div class="container">
-                <div class="row">
-                    <div class="col-sm-3">
-                        <h5>CORPORATE OFFICE.</h5>
-                        <div class="textwidget">
-                            <address style="margin-top: 14px;"><i class="fa fa-map-marker"></i><span> Office No.
-                                    107</span><br>
-                                <span class="nxtln"> 1st Floor</span><br>
-                                <span class="nxtln"> Westeria Fortune</span><br>
-                                <span class="nxtln"> Murunji Road, Bhumkar Chowk, Wakad, Pune - 411033</span>	
-                            </address>
-                        </div>
-                    </div>
-    
-    
-                    <div class="col-sm-3">
-                        <h5>Contact Us</h5>
-                        <ul style="line-height: 1.3;">
-                                <p><span><i class="fa fa-envelope fa-sm"></i><a href="#" title="email">
-                                        imaginehomeland@gmail.com</a></span></p>
-                                <p><span><i class="fa fa-phone"></i> (+91) 9850161144</span></p>
-                                <p><span><i class="fa fa-phone"></i> (+91) 9850581144</span></p>
-                                <p><span><i class="fa fa-phone"></i> (+91) 9923081144</span></p>
-                        </ul>
-                    </div>
-                    <div class="col-sm-3">
-                        <h5>Authorized Channel Partner</h5>
-                        <ul style="line-height: 1.3";>
-                            <!-- <li><a href="#">Marketing Partner</a></li> -->
-                            <li><a>Imagine Homeland</a></li>
-                            <li><a> Office No.
-                                    107</a><br>
-                                <span class="nxtln"> 1st Floor, Wisteria Fortune</span><br>
-                                <span class="nxtln"> Murunji Road, Pune - 411033</span>
-                                <p></p></li>
-                            <li><a>MAHA RERA A52100013889</a></li>
-                            <li><a href="#"></a></li>
-                        </ul>
-                    </div>
-                    <div class="col-sm-2">
-                        <h5>Follow Us</h5>
-                        <div class="social-networks">
-                            <a href="#" class="twitter" style="font-size:20px;"><i class="fa fa-twitter"></i></a>
-                            <a href="#" class="facebook" style="font-size:20px;"><i class="fa fa-facebook"></i></a>
-                            <a href="#" class="google" style="font-size:20px;"><i class="fa fa-google-plus"></i></a>
-                        </div>
-                        <a href="../view/Contact.html" class="btn btn-info" role="button">Contact Us</a>
+    <!-- footer start -->
+    <footer id="myFooter">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-3">
+                    <h5>CORPORATE OFFICE.</h5>
+                    <div class="textwidget">
+                        <address style="margin-top: 14px;"><i class="fa fa-map-marker"></i><span> Office No.
+                                107</span><br>
+                            <span class="nxtln"> 1st Floor</span><br>
+                            <span class="nxtln"> Westeria Fortune</span><br>
+                            <span class="nxtln"> Murunji Road, Bhumkar Chowk, Wakad, Pune - 411033</span>
+                        </address>
                     </div>
                 </div>
+
+
+                <div class="col-sm-3">
+                    <h5>Contact Us</h5>
+                    <ul style="line-height: 1.3;">
+                        <p><span><i class="fa fa-envelope fa-sm"></i><a href="#" title="email">
+                                    imaginehomeland@gmail.com</a></span></p>
+                        <p><span><i class="fa fa-phone"></i> (+91) 9850161144</span></p>
+                        <p><span><i class="fa fa-phone"></i> (+91) 9850581144</span></p>
+                        <p><span><i class="fa fa-phone"></i> (+91) 9923081144</span></p>
+                    </ul>
+                </div>
+                <div class="col-sm-3">
+                    <h5>Authorized Channel Partner</h5>
+                    <ul style="line-height: 1.3" ;>
+                        <!-- <li><a href="#">Marketing Partner</a></li> -->
+                        <li><a>Imagine Homeland</a></li>
+                        <li><a> Office No.
+                                107</a><br>
+                            <span class="nxtln"> 1st Floor, Wisteria Fortune</span><br>
+                            <span class="nxtln"> Murunji Road, Pune - 411033</span>
+                            <p></p>
+                        </li>
+                        <li><a>MAHA RERA A52100013889</a></li>
+                        <li><a href="#"></a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-2">
+                    <h5>Follow Us</h5>
+                    <div class="social-networks">
+                        <a href="#" class="twitter" style="font-size:20px;"><i class="fa fa-twitter"></i></a>
+                        <a href="#" class="facebook" style="font-size:20px;"><i class="fa fa-facebook"></i></a>
+                        <a href="#" class="google" style="font-size:20px;"><i class="fa fa-google-plus"></i></a>
+                    </div>
+                    <a href="../view/Contact.html" class="btn btn-info" role="button">Contact Us</a>
+                </div>
             </div>
-            <div class="footer-copyright">
-                <p>Copyright © 2019 32 PinewoodDrive </p>
-            </div>
-        </footer>
+        </div>
+        <div class="footer-copyright">
+            <p>Copyright © 2019 32 PinewoodDrive </p>
+        </div>
+    </footer>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>

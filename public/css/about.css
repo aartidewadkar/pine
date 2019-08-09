@@ -32,13 +32,14 @@
     font-size: 19px;
     line-height: 1.55em;
     color: #fff;
-    margin-left: 10%;
-    margin-right: 10%
+    margin-bottom:123px;
+    margin-right: 10%;
+    margin-left: 10%;    
 }
 
 .short-image-title {
     text-align: center;
-    margin-top: 260px !important;
+    margin-top: 100px !important;
 }
 
 h1,

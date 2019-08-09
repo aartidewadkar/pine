@@ -4,16 +4,9 @@
     flex-basis: auto;
 }
 
-.navbar {
-    background-color: rgb(0, 0, 0, 0.4);
+.navbar-nav {
+    padding-left: 2%;
 }
-
-.navbar-expand-lg .navbar-nav .nav-link {
-    padding-right: 2.5rem;
-    padding-left: .5rem;
-}
-
-
 #myFooter .social-networks a {
     font-size: 20px;
 }
@@ -389,7 +382,8 @@ body {
 
 /* second navbar */
 .navbar .navbar-nav .nav-item {
-    padding-left: 25px;
+    padding-left: 60px;
+  
 
 }
 
@@ -453,4 +447,7 @@ masonry-grid .masonry-grid-item {
 
 .map .container {
     padding-bottom: 45px;
+}
+[type=button]:not(:disabled),button:not(:disabled) {
+    margin-left: 5%;
 }

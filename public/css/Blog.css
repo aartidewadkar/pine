@@ -43,10 +43,7 @@
      display: block;
 
  }
- .post-list h1.entry-title a {
-     color: #be5000;
- }
-
+ 
  .post-list article {
      float: left;
      width: 100%;
@@ -261,8 +258,9 @@
  }
 
  .post-list h1.entry-title {
-     margin-top: -180px;
+   padding-top: 1%;
      margin-bottom: 5px;
+
  }
 
  h1 {
@@ -277,7 +275,29 @@
      font-size: 24px;
      line-height: 28px;
      text-transform: uppercase;
+     text-decoration: none;
  }
+ .post-list h1.entry-title:hover{
+     color:  #f16c20;
+ }
+ .border-bottom-hover:hover {
+    border-bottom-color: #f16c20;
+}
+@media screen and (max-width: 580px){
+.list-post-entry-meta {
+    float: left;
+    position: relative;
+    margin: 15px 0 0;
+    padding: 0;
+}
+}
+@media (max-width: 580px){
+body {
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+}
+}
 
  .colored-line-left,
  .colored-line-right,
@@ -313,6 +333,27 @@
     font-weight: bold;
     text-align: left;
 }
+
+
 #sidebar-secondary ul {
     padding-left: 0;
 }
+ul.lptw-recent-posts-thumbnails-widget {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#sidebar-secondary ul li {
+    font-size: 16px;
+    list-style: none;
+}
+.lptw_recent_posts_thumbnails_widget a.lptw-header-link {
+    text-decoration: none;
+    /* color: #333333; */
+    line-height: 1.5;
+    padding-bottom: 5px;
+    display: block;
+}
+
+
+

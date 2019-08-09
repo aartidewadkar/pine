@@ -28,6 +28,7 @@
         height: 7rem !important; */
         width: 50%;
         height: auto;
+        margin-left: 4%;
     }
 
     .carousel-inner img {
@@ -63,7 +64,6 @@
                     <li class="nav-item">
                         <a class="nav-link" href="../view/Contact.html">CONTACT US</a>
                     </li>
-
                 </ul>
                 <button type="button" class="btn btn-info" data-toggle="modal" data-target="#exampleModal">
                     Enquiry Now
@@ -103,6 +103,78 @@
             </a>
         </div>
     </div>
+
+    <!-- Enquiry Modal start -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <form name="enquiry" action="#" method="post" onsubmit="return validateForm()">
+                        <div class="form-group">
+                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9"> Name :
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <input type="text" placeholder="Amit shinde" class="form-control col-md-9"
+                                    id="formGroupExampleInput" required *>
+                            </div>
+
+                        </div>
+                        <div class="form-group bmd-form-group">
+                            <!-- manually specified -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <label for="formGroupExampleInput2" class="bmd-label-floating col-md-9">Email :
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <input type="email" placeholder=" abc@gmail.com" required *
+                                    class="form-control col-md-9" id="formGroupExampleInput2">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <label for="formGroupExampleInput" class="bmd-label-floating col-md-9">Phone :
+                                </label>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-1"></div>
+                                <input type="tel" placeholder="+91  " required * class="form-control col-md-9"
+                                    id="formGroupExampleInput" pattern="[0-9]{10}">
+                            </div>
+
+                        </div>
+                        <div class="form-group">
+                            <!-- left unspecified, .bmd-form-group will be automatically added (inspect the code) -->
+                            <div class="row">
+                                <div class="col-md-1"></div>
+
+                                <select class="browser-default custom-select">
+                                    <option selected>Intressed in</option>
+                                    <option value="1">1 BHK</option>
+                                    <option value="2">2 BHK</option>
+                                    <option value="3">3 BHK</option>
+                                </select>
+                            </div>
+                        </div>
+                        <hr>
+                        <button type="submit" value="Submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Enquiry Model ends here -->
+
 
     <!-- Priject USP Start -->
 
