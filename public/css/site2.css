@@ -1,5 +1,121 @@
-.post-content{
+.post-content {
+
+    /* margin-bottom: 2em; */
+    /* padding: 2%; */
+}
+
+.heading .page-title h1 {
+    padding-top: 0px;
+}
+
+.img-fluid {
+    position: relative;
+    width: 100%;
+    height: 70%;
+}
+
+.text-center {
+    position: relative;
+    /* top: 50%; */
+    margin-top: -20%;
+    /* left: 50%; */
+    /* transform: translate(-50%, -50%); */
+    color: black;
+
+}
+
+.blog {
     background-color: #f5f5f5;
     clear: both;
-    margin-bottom: 2em;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+#primary {
+    margin: 5px 0;
+}
+
+.featured-image {
+    padding: 1.5em 1.5em;
+
+}
+
+.entry-header {
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.entry-header {
+    width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+.screen-reader-text {
+    clip: rect(1px, 1px, 1px, 1px);
+    position: absolute !important;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+}
+
+.entry-title {
+    margin-bottom: 14px;
+    font-size: 16px;
+    color: #000;
+    text-transform: capitalize;
+    font-weight: 600;
+    padding-top: 3%;
+}
+
+.entry-meta a {
+    clear: both;
+    color: #727272;
+    text-transform: capitalize;
+    font-weight: 300;
+    letter-spacing: 2px;
+}
+
+.entry-meta h5 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+/* main containt start*/
+p {
+    margin-bottom: 1.5em;
+    line-height: 1.7em;
+}
+
+.gallery {
+    margin-bottom: 1.6em;
+}
+
+.gallery-item {
+    display: inline-block;
+    padding: 1.79104477%;
+    text-align: center;
+    vertical-align: top;
+    width: 100%;
+}
+
+.entry-content {
+    text-align: justify;
+    width: 100%;
+    word-wrap: break-word;
+    overflow: hidden;
+    /* padding: 0 2em; */
+}
+
+.gallery-caption {
+    display: block;
+    color: rgba(51, 51, 51, 0.7);
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 0.5em 0;
+}
+
+.wp-caption-text {
+    text-align: center;
 }
